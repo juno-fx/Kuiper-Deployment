@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <img src="/mars.png"/>
+    <img src="/kuiper.png"/>
     <h3 align="center">Kuiper Deployment</h3>
     <p align="center">
         Kuiper microservice for deploying workstations.
