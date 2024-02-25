@@ -1,5 +1,5 @@
-mars:
-  image: "registry.hatfieldfx.com/mars:main"                           # Registry to pull the Kuiper server image from
+kuiper:
+  image:                            # Registry to pull the Kuiper server image from
   namespace: production             # Namespace to deploy the Kuiper server to
 
   node_selector:                   # Node selector to deploy the Kuiper server to

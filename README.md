@@ -19,7 +19,7 @@ is handled by a values file that is stored in a private repository. This allows 
 per project.
 
 ```yaml
-mars:
+kuiper:
   image:                            # Registry to pull the Kuiper server image from
   namespace: production             # Namespace to deploy the Kuiper server to
 

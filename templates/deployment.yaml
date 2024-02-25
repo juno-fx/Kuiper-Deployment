@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kuiper
-  namespace: {{ .Values.mars.namespace }}
+  namespace: {{ .Values.kuiper.namespace }}
 spec:
   revisionHistoryLimit: 0
   selector:
@@ -23,15 +23,15 @@ spec:
     spec:
       serviceAccountName: kuiper
 
-      {{- if .Values.mars.node_selector.enable }}
+      {{- if .Values.kuiper.node_selector.enable }}
       nodeSelector:
-        {{- range $key, $value := .Values.mars.node_selector.labels }}
+        {{- range $key, $value := .Values.kuiper.node_selector.labels }}
         {{ $key }}: {{ $value }}
         {{- end }}
       {{- end }}
       containers:
         - name: kuiper
-          image: {{ .Values.mars.image }}
+          image: {{ .Values.kuiper.image }}
           imagePullPolicy: Always
           resources:
             requests:

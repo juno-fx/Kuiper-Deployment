@@ -1,9 +1,9 @@
-{{ range .Values.mars.workstations }}
+{{ range .Values.kuiper.workstations }}
 apiVersion: junovfx.com/v1
 kind: Workstation
 metadata:
   name: {{ .name }}
-  namespace: {{ $.Values.mars.namespace }}
+  namespace: {{ $.Values.kuiper.namespace }}
 spec:
   registry: {{ .registry }}
   icon: {{ .icon }}
