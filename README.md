@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <img src="https://avatars.githubusercontent.com/u/9037579?v=4"/>
+    <img src="/kuiper.png"/>
     <h3 align="center">Kuiper Deployment</h3>
     <p align="center">
         Kuiper microservice for deploying workstations.
